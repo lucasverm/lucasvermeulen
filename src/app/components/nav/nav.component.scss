@@ -1,0 +1,60 @@
+* {
+  //border: 1px solid red;
+}
+
+$nav-width: 25px;
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .arrow-child:hover {
+    background-color: grey;
+  }
+
+  .left {
+    position: absolute;
+    height: 100%;
+    width: $nav-width;
+    left: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .right {
+    position: absolute;
+    height: 100%;
+    width: $nav-width;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .up {
+    position: absolute;
+    width: 100%;
+    height: $nav-width;
+    top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .down {
+    position: absolute;
+    width: 100%;
+    height: $nav-width;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content {
+    position: absolute;
+    width: calc(100% - $nav-width * 2);
+    height: calc(100% - $nav-width * 2);
+    margin: $nav-width;
+    padding: 3px
+  }
+}

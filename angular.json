@@ -25,7 +25,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "st",
+      "prefix": "lv",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
