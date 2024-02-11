@@ -2,7 +2,8 @@
   //border: 1px solid red;
 }
 
-$nav-width: 25px;
+$nav-width-top-bottom: 60px;
+$nav-width-left-right: 90px;
 
 .container {
   width: 100vw;
@@ -11,50 +12,59 @@ $nav-width: 25px;
   overflow: hidden;
 
   .arrow-child:hover {
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.05);
   }
 
   .left {
     position: absolute;
     height: 100%;
-    width: $nav-width;
+    width: $nav-width-left-right;
     left: 0;
     display: flex;
     align-items: center;
+    justify-content: start;
   }
 
   .right {
     position: absolute;
     height: 100%;
-    width: $nav-width;
+    width: $nav-width-left-right;
     right: 0;
     display: flex;
     align-items: center;
+    justify-content: end;
   }
 
   .up {
     position: absolute;
     width: 100%;
-    height: $nav-width;
+    height: $nav-width-top-bottom;
     top: 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
   }
 
   .down {
     position: absolute;
     width: 100%;
-    height: $nav-width;
+    height: $nav-width-top-bottom;
     bottom: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
   }
+
+  $content-padding : 3px;
 
   .content {
     position: absolute;
-    width: calc(100% - $nav-width * 2);
-    height: calc(100% - $nav-width * 2);
-    margin: $nav-width;
-    padding: 3px
+    width: calc(100vw - $nav-width-left-right * 2 - $content-padding * 2);
+    height: calc(100vh - $nav-width-top-bottom * 2 - $content-padding * 2);
+    margin: $nav-width-top-bottom $nav-width-left-right;
+    padding: $content-padding;
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
