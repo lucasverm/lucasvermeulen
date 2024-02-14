@@ -10,4 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class NavComponent {
 
+  public moveWindow(direction: string) {
+    console.log('moveWindow: ', direction)
+  }
 }

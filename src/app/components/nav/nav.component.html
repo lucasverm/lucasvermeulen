@@ -1,18 +1,18 @@
 <div class="container">
-  <div class="up arrow-child">
+  <div class="up arrow-child" (click)="moveWindow('up')">
     <mat-icon>keyboard_arrow_up</mat-icon>
     <span>Technology</span>
   </div>
-  <div class="left arrow-child">
+  <div class="left arrow-child" (click)="moveWindow('left')">
     <mat-icon>keyboard_arrow_left</mat-icon>
     <span>About</span>
   </div>
-  <div class="right arrow-child">
+  <div class="right arrow-child" (click)="moveWindow('right')">
     <span>Contact</span>
     <mat-icon>keyboard_arrow_right</mat-icon>
   </div>
-  <div class="down arrow-child">
-    <span>Solution</span>
+  <div class="down arrow-child" (click)="moveWindow('down')">
+    <span>Solutions</span>
     <mat-icon>keyboard_arrow_down</mat-icon>
   </div>
   <div class="content">

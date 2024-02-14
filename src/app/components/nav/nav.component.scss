@@ -57,7 +57,7 @@ $nav-width-left-right: 90px;
     justify-content: end;
   }
 
-  $content-padding : 3px;
+  $content-padding : 0px;
 
   .content {
     position: absolute;
@@ -66,5 +66,6 @@ $nav-width-left-right: 90px;
     margin: $nav-width-top-bottom $nav-width-left-right;
     padding: $content-padding;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: auto
   }
 }
